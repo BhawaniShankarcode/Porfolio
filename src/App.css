@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+body{
+  background-color: rgba(0, 0, 255, 0.589);
+}
+.nav{
+  display: flex;
+  height: 10vh;
+  /* border: 1px solid white; */
+  align-items: center;
+}
+.nav .navDiv{
+  width: 30%;
+  color: white;
+  font-size: 25px;
+}
+.nav div h2{
+  margin-left: 40px;
+}
+.nav ul{
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.nav ul li{
+  list-style: none;
+  font-size: 20px;
+  font-family: cursive;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.link:hover{
+  background-color: white;
+  color: blue;
+  padding:15px;
+  border-radius: 15px;
+}
+
+.hamburger{
+  /* display:none;    */
+  visibility: hidden;
+  color: white;
+  font-size: 40px;
+  width: 10%;
+}
+.menuLg{
+  display: none;
+}
+
+/** Home page **/
+
+.home{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+/** about **/
+
+.Main_about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+}
+.Main_about_1{
+  margin-top: 2%;
+}
+.frist_main_about{
+  width: 100%; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frist_about{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frist_about img{
+  height: 80vh;
+  border-radius: 20px;
+}
+.intro_about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.intro_about p{
+  width: 80%;
+}
+.Main_about_2{
+  margin-top: 10%;
+}
+
+.Second_about{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10px;
+}
+.skills{
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.skills p{
+  margin-top: 20px;
+  font-weight: bold;
+}
+.skillBar{
+  height: 20px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: green;
+  margin-top: 10px;
+}
+.education h1{
+  margin-bottom: 10px;
+}
+.education .heading{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+/** Project **/
+
+.Project_main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap ;
+}
+
+.ProjectCard{
+  width: 25%;
+  text-align: center;
+  margin: 2%;  
+}
+.ProjectCard:hover{
+  cursor: pointer;
+  box-shadow: 20px 20px 20px;
+  width: 26%;
+}
+.ProjectCard img{
+  height: 40vh;
+  width: 100%;
+}
+
+/** contact */
+.Contact_main{
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Contact_div{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 100%;
+  /* margin: auto; */
+}
+.Contact_heading{
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.Contact_div a{
+  text-decoration: none;
+  color: black;
+}
+.icon{
+  height: 50%;
+  width: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav{
+    align-items:flex-start;
+  }
+  .nav .fristUl{
+    display: none;
+  }
+  .nav div h2{
+    margin-left: 20px;
+  }
+  .hamburger{
+    visibility: visible;
+    margin-left: 160px;
+    margin-top: 10px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu ul{
+    background-color: #fff;
+  }
+  .menu ul li{
+    margin: 20px;
+    list-style: none;
+    font-size: 20px;
+  }
+  .menu ul li .link{
+    color: blue;
+  }  
+  .home{
+    height: 20vh;
+  }
+  .frist_main_about{
+    display: flex;
+    flex-direction: column;
+  }
+  .frist_about img{
+    height: 55vh;
+    border-radius: 2px;
+  }
+  .intro_about{
+    text-align: justify;
+    width: 95%;
+    margin-top: 20px;
+  }
+  .intro_about p{
+    width: 80%;
+    font-weight: bold;
+  }
+
+.Second_about{
+  flex-direction: column;
+}
+.education {
+  width: 90%;
+}
+.skills{
+  width: 90%;
+  margin: 20px 0px 20px 20px;
+}
+
+.Project_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap ;
+  }
+  
+  .ProjectCard{
+    /* height: vh; */
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    margin: 2%;  
+  }
+  .ProjectCard:hover{
+    cursor: pointer;
+    box-shadow: 20px 20px 20px;
+    width: 76%;
+  }
+  .ProjectCard img{
+    height: 40vh;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+.Contact_div{
+  width: 100%;
+  margin: 20px 0px 20px 10px;
+}
+.Contact_para{
+  font-weight: bold;
+}
+
+.icon{
+  height: 100%;
+  width: 10%;
+  margin-right: 30px;
+}
+
+}
